@@ -51,3 +51,8 @@ footer a {
     color: #000000;
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas, como smartphones en posición vertical */
+    /* Aquí puedes ajustar tamaños de fuente, márgenes, etc. */
+}
