@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #2663ff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Secciones */
+section {
+    padding: 2rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #2663ff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Enlace de contacto */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
