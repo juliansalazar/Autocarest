@@ -7,8 +7,8 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #2663ff;
-    color: #fff;
+    background-color: #c8c8c8;
+    color: #000000;
     text-align: center;
     padding: 1rem 0;
 }
@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Secciones */
@@ -40,14 +40,14 @@ section {
 
 /* Pie de página */
 footer {
-    background-color: #2663ff;
-    color: #fff;
+    background-color: #c8c8c8;
+    color: #000000;
     text-align: center;
     padding: 1rem 0;
 }
 
 /* Enlace de contacto */
 footer a {
-    color: #fff;
+    color: #000000;
     text-decoration: underline;
 }
