@@ -95,8 +95,6 @@ header h1 {
 }
 
 
-
-/* Pie de página */
 footer {
   bottom: 0;
   position: absolute;
@@ -106,17 +104,17 @@ footer {
   padding: 1rem 0;
   width: 100%;
 }
-
+/* Pie de página 
 .footer-container {
   height: 35px;
   bottom: 0;
   position: absolute;
   width: 100%;
-  z-index: 3; /* 1 not working for some reason*/
+  z-index: 3; /* 1 not working for some reason
   text-align: center;
   padding: 1rem 0;
 }
-
+*/
 
 
 .row:after {
