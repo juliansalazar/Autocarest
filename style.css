@@ -17,7 +17,7 @@ header {
     color: #000000;
     text-align: center;
     padding: 30px;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 header h1 {
@@ -92,6 +92,15 @@ footer {
     .column {
       width: 100%;
     }
+
+    header {
+        background-color: #c8c8c8;
+        color: #000000;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+    }
+
   }
 
   .carousel {
