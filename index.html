@@ -1,16 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -23,40 +11,73 @@
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/autocarest/citaprogramada', text: 'Programe cita para su vehículo', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
     <!-- Final del widget de globo de Calendly -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </head>
 <body>
-    <header class="header-band">
-        <div class="logo">
-            <img src="./images/logo.png" alt="Taller Vehicular Logo" width="150">
-        </div>
+    <header>
         <nav class="navbar">
-            <ul>
+            <a href="./index.html"><img src="./images/logo.png" alt="Taller Vehicular Logo" width="200"></a>
+            <ul class="header-fonts">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./DataKeep.html">Servicios</a></li>
                 <li><a href="./about.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="home">
-        <!-- Contenido de la sección de inicio -->
-    </section>
-    
-    <section id="services">
-        <!-- Contenido de la sección de servicios -->
-    </section>
-    
-    <section id="about">
-        <!-- Contenido de la sección "Sobre Nosotros" -->
-    </section>
-    
-    
-    <footer>
-        <p>&copy; 2023 Autocarest Cia. Ltda. Todos los derechos reservados.</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="./images/logo.png" alt="Slide 1">
+            <img src="./images/automotive-record-keeping.jpg" alt="Slide 2">
+            <img src="./images/logo.png" alt="Slide 3">
+        </div>
+        <button id="prevBtn" class="btn btn-primary">Anterior</button>
+        <button id="nextBtn" class="btn btn-primary">Siguiente</button>
+    </div>
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        let currentIndex = 0;
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % carouselContainer.children.length;
+            updateCarousel();
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + carouselContainer.children.length) % carouselContainer.children.length;
+            updateCarousel();
+        });
+        
+        function updateCarousel() {
+            const slideWidth = carouselContainer.clientWidth;
+            const offset = -currentIndex * slideWidth;
+            carouselContainer.style.transform = `translateX(${offset}px)`;
+        }
+    </script>
+
+    <div class="row">
+        <div class="column" style="background-color: #aaa;">Servicio Preventivo</div>
+        <div class="column" style="background-color: #aaa;">Servicio Correctivo</div>
+        <div class="column" style="background-color: #aaa;">Importaciones</div>
+    </div>    
+    <div class="footer">
+        <footer>
+            <p>Encuentranos en redes:</p>
+            <a href="https://www.instagram.com/autocarest/?hl=es" title="Visitanos en Instagram" rel="nofollow noopener" class="link-instagram">Instagram</a>
+            <a href="https://goo.gl/maps/8Hfz8vD9CW34VnYh9" title="Visitanos en Google" class="link-googleplus">Google</a>
+            <p>Victor Aguilar y Av. Américas Cuenca, Azuay - ECUADOR (+593) 07-4-093-777</p>
+            <p>&copy; 2023 Autocarest Cia. Ltda. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

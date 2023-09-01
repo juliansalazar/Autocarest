@@ -6,3 +6,4 @@ const button = document.querySelector('#contactButton');
 button.addEventListener('click', () => {
     alert('¡Gracias por contactarnos! Te responderemos pronto.');
 });
+

@@ -5,63 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de Nosotros - Autocarest</title>
     <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header class="header-band">
-        <div class="logo">
-            <img src="./images/logo.png" alt="Taller Vehicular Logo" width="150">
-        </div>
+    <header>
         <nav class="navbar">
-            <ul>
+            <a href="./index.html"><img src="./images/logo.png" alt="Taller Vehicular Logo" width="200"></a>
+            <ul class="header-fonts">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./DataKeep.html">Servicios</a></li>
                 <li><a href="./about.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <div class="about-content">
-            <h2>Acerca de Autocarest</h2>
-            <p>Somos un taller vehicular dedicado a brindar servicios de mantenimiento y reparación de alta calidad.</p>
-            <p>Nuestro equipo de expertos mecánicos y técnicos altamente capacitados se esfuerza por proporcionar a nuestros clientes soluciones confiables y eficientes para sus necesidades automotrices.</p>
-            <p>En Autocarest, nos enorgullecemos de ofrecer un servicio amigable y profesional, y nos esforzamos por mantener la satisfacción del cliente en todo momento.</p>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="footer">
-            <div class="container-fluid container-xl">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4 location">
-                        <div class="footer-wh-wrapper"><span class="footer-wh">Horarios de atención: Lun - Vie: 8:30 AM - 5:30 PM</span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-xs-12 col-md-4 col-lg-3">
-                        <div class="f-social-container">
-                            <div class="f-social-text">
-                                Encuentranos en redes:
-                            </div>
-                            <div class="social"><a itemprop="sameAs" target="_blank" href="https://www.instagram.com/autocarest/?hl=es" title="Visitanos en Instagram" rel="nofollow noopener" class="link-instagram">Instagram</a>
-                                <a itemprop="sameAs" target="_blank" href="https://goo.gl/maps/8Hfz8vD9CW34VnYh9" title="Visitanos en Google" rel="nofollow noopener" class="link-googleplus">Google</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row footer-disclaimers">
-                    <div class="col-xs-12 col-sm-6 col-lg-9">
-                        <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="nap"> Victor Aguilar y Av. Américas Cuenca, Azuay - ECUADOR (+593) 07-4-093-777 
-                        </div>
-                    </div>
-                </div>
-                <br>
-    
-                <p>&copy; 2023 Autocarest Cia. Ltda. Todos los derechos reservados.</p>
-        </footer>
 
+    <div class="row">
+        <h1>Acerca de Autocarest</h1>
+            <div class="column"><p>Somos un taller vehicular dedicado a brindar servicios de mantenimiento y reparación de alta calidad.</p></div>
+            <div class="column"><p><p>Nuestro equipo de expertos mecánicos y técnicos altamente capacitados se esfuerza por proporcionar a nuestros clientes soluciones confiables y eficientes para sus necesidades automotrices.</p></p></div>
+            <div class="column"><p><p>En Autocarest, nos enorgullecemos de ofrecer un servicio amigable y profesional, y nos esforzamos por mantener la satisfacción del cliente en todo momento.</p></p></div>
+    </div> 
+
+    <div class="footer">
+        <footer>
+            <p>Encuentranos en redes:</p>
+            <a href="https://www.instagram.com/autocarest/?hl=es" title="Visitanos en Instagram" class="link-instagram">Instagram</a>
+            <a href="https://goo.gl/maps/8Hfz8vD9CW34VnYh9" title="Visitanos en Google" class="link-googleplus">Google</a>
+            <p>Victor Aguilar y Av. Américas Cuenca, Azuay - ECUADOR (+593) 07-4-093-777</p>
+            <p>&copy; 2023 Autocarest Cia. Ltda. Todos los derechos reservados.</p>
+        </footer>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

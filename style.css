@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+  }
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+p {
+    font-size: 18px;
 }
 
 /* Encabezado */
@@ -10,7 +16,8 @@ header {
     background-color: #c8c8c8;
     color: #000000;
     text-align: center;
-    padding: 1rem 0;
+    padding: 30px;
+    font-size: 35px;
 }
 
 header h1 {
@@ -46,20 +53,81 @@ footer {
     padding: 1rem 0;
 }
 
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /* Enlace de contacto */
-footer a {
+.footer a {
     color: #000000;
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    /* Estilos para pantallas pequeñas, como smartphones en posición vertical */
-    /* Aquí puedes ajustar tamaños de fuente, márgenes, etc. */
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-div {
-    padding-top: 15px;
-    padding-right: 10px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.center {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 300px;
+    
+}
+
+@media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
