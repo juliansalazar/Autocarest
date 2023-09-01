@@ -5,69 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Vehicular</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Principio del widget de globo de Calendly -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/autocarest/citaprogramada', text: 'Programe cita para su vehículo', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
     <!-- Final del widget de globo de Calendly -->
-
+    
 
 
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="./index.html"><img src="./images/logo.png" alt="Taller Vehicular Logo" width="200"></a>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./DataKeep.html">Servicios</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="carousel">
-        <div class="carousel-container">
-            <img src="./images/logo.png" alt="Slide 1">
-            <img src="./images/automotive-record-keeping.jpg" alt="Slide 2">
-            <img src="./images/logo.png" alt="Slide 3">
-        </div>
-        <button id="prevBtn" class="btn btn-primary">Anterior</button>
-        <button id="nextBtn" class="btn btn-primary">Siguiente</button>
+    
+    <div class="nav-container">
+        <header>
+            <nav class="navbar">
+                <a href="./index.html"><img src="./images/logo.png" alt="Taller Vehicular Logo" width="175"></a>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./DataKeep.html">Servicios</a></li>
+                    <li><a href="./about.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        
     </div>
-    <script>
-        const carouselContainer = document.querySelector('.carousel-container');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        
-        let currentIndex = 0;
-        
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % carouselContainer.children.length;
-            updateCarousel();
-        });
-        
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + carouselContainer.children.length) % carouselContainer.children.length;
-            updateCarousel();
-        });
-        
-        function updateCarousel() {
-            const slideWidth = carouselContainer.clientWidth;
-            const offset = -currentIndex * slideWidth;
-            carouselContainer.style.transform = `translateX(${offset}px)`;
-        }
-    </script>
 
-    <div class="row">
-        <div class="column" style="background-color: #aaa;">Servicio Preventivo</div>
-        <div class="column" style="background-color: #aaa;">Servicio Correctivo</div>
-        <div class="column" style="background-color: #aaa;">Importaciones</div>
-    </div>    
+    <div class="container">
+	
+        <div data-am-fadeshow="next-prev-navigation">
+    
+            <!-- Radio -->
+            <input type="radio" name="css-fadeshow" id="slide-1" />
+            <input type="radio" name="css-fadeshow" id="slide-2" />
+            <input type="radio" name="css-fadeshow" id="slide-3" />
+    
+            <!-- Slides -->
+            <div class="fs-slides">
+                <div class="fs-slide" style="background-image: url(https://lubrication-management.com/wp-content/uploads/sites/3/2017/05/IMG_LM_CambioAceite_767x431.jpg);">
+                    <!-- Add content to images (sample) -->
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                        <h1 style="margin-top: 0; margin-bottom: 0.8vw; font-size: 5vw; font-weight: bold;">Mantenimiento Preventivo</h1>
+                        <p style="font-size: 80px; font-weight: 100; margin-top: 0; color: white;"><strong>Desde $24.99</strong></p>
+                    </div>
+                </div>
+                <div class="fs-slide" style="background-image: url(https://autochimps.com/wp-content/uploads/2020/07/mechanic-repairing-or-rebuilding-engine-1024x576.jpg);">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                        <h1 style="margin-top: 0; margin-bottom: 0.8vw; font-size: 5vw; font-weight: bold;">Mantenimiento Correctivo</h1>
+                        <p style="font-size: 80px; font-weight: 100; margin-top: 0; color: white;"><strong>ABC Motor | ABC Frenos</strong></p>
+                    </div>
+                </div>
+                <div class="fs-slide" style="background-image: url(https://i.ebayimg.com/images/g/aMwAAOSwoHZiBffL/s-l1600.jpg);">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-family: sans-serif; text-align: center; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                        <h1 style="margin-top: 0; margin-bottom: 0.8vw; font-size: 5vw; font-weight: bold;">Importaciones</h1>
+                        <p style="font-size: 80px; font-weight: 100; margin-top: 0; color: white;"><strong>Autopartes</strong></p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Quick Navigation -->
+            <div class="fs-quick-nav">
+                <label class="fs-quick-btn" for="slide-1"></label>
+                <label class="fs-quick-btn" for="slide-2"></label>
+                <label class="fs-quick-btn" for="slide-3"></label>
+            </div>
+            
+            <!-- Prev Navigation -->
+            <div class="fs-prev-nav">
+                <label class="fs-prev-btn" for="slide-1"></label>
+                <label class="fs-prev-btn" for="slide-2"></label>
+                <label class="fs-prev-btn" for="slide-3"></label>
+            </div>
+            
+            <!-- Next Navigation -->
+            <div class="fs-next-nav">
+                <label class="fs-next-btn" for="slide-1"></label>
+                <label class="fs-next-btn" for="slide-2"></label>
+                <label class="fs-next-btn" for="slide-3"></label>
+            </div>
+    
+        </div>
+        
+    </div>
+
     <div class="footer">
         <footer>
-            <p>Encuentranos en redes:</p>
+            <p>Encuentranos en nuestras redes:</p>
             <a href="https://www.instagram.com/autocarest/?hl=es" title="Visitanos en Instagram" rel="nofollow noopener" class="link-instagram">Instagram</a>
             <a href="https://goo.gl/maps/8Hfz8vD9CW34VnYh9" title="Visitanos en Google" class="link-googleplus">Google</a>
             <p>Victor Aguilar y Av. Américas Cuenca, Azuay - ECUADOR (+593) 07-4-093-777</p>
