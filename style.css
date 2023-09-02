@@ -73,7 +73,7 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: rgba(0, 140, 255, 0.959);
+    background: #35357D;
 }
 
 .home:before{
